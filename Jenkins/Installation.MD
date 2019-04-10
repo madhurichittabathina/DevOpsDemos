@@ -92,3 +92,8 @@ http://YOUR-SERVER-PUBLIC-IP:8080
 - [x] [Jenkins Plugin Installation](https://youtu.be/p_PqPBbjaZ4)
 - [x] [Jenkins Master-Slave Configuration](https://youtu.be/hwrYURP4O2k)
 - [ ] Setup Jenkins to run inside Tomcat Server
+
+
+
+###### REMOVE JAVA FROM LINUX
+sudo yum remove java-1.7.0-openjdk
