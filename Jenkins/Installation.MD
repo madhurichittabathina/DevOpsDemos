@@ -22,9 +22,11 @@ Lets install java and set the java home
 java -version
 find /usr/lib/jvm/java-1.8* | head -n 3
 #JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64
-vi .bash_profiles
-export JAVA_HOME
-PATH=$PATH:$JAVA_HOME
+vi .bash_profile
+JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64
+
+PATH=$PATH:$JAVA_HOME:$HOME/bin
+export PATH
 # To set it permanently update your .bash_profile
 source ~/.bash_profile
 ```
@@ -59,7 +61,10 @@ systemctl enable jenkins
 By default jenkins runs at port `8080`, You can access jenkins at
 ```sh
 http://YOUR-SERVER-PUBLIC-IP:8080
-```
+`
+- Grab the default password 
+  - Password Location: cat /var/lib/jenkins/secrets/initialAdminPassword
+  copy and paste the password.
 #### Configure Jenkins
 - The default Username is `admin`
 - Grab the default password 
